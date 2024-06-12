@@ -1,0 +1,8 @@
+/.idea/
+/_site/
+.env
+.venv
+
+/dist/
+/venv/
+/cdk.out/
