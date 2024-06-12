@@ -1,5 +1,6 @@
-# Lambda Service
-This package contains the infrastructure and the code to deploy and run a backend service that calls an OpenAPI Assistant API.
+# Generate Cover Letter
+This package contains the infrastructure and the code to deploy and run a generate cover letter on AWS lambda. It used 
+OpenAPI Assistant API.
 
 
 ## Code organization
@@ -69,5 +70,8 @@ aws apigateway test-invoke-method --rest-api-id <api-id> \
     --resource-id <resource-id> \
     --output json
 ```
+
+### Testing
+I mostly use it against offers on https://justjoin.it/ so the the job description URL would be `https://justjoin.it/offers/allegro-engineering-team-manager-java-kotlin---tp-o-poznan-java`
 
 
