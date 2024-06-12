@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cover Letter Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content, .chat-container, .feedback-section {
+            margin-top: 20px;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .chat-container .message {
+            margin-bottom: 10px;
+        }
+        .chat-container .user-message {
+            font-weight: bold;
+            color: #000;
+        }
+        .chat-container .server-message {
+            font-weight: normal;
+            color: #333;
+        }
+        .feedback-section {
+            display: none; /* Initially hidden */
+        }
+        .spinner {
+            display: none; /* Initially hidden */
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #000;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .preserve-whitespace {
+            white-space: pre-wrap; /* Preserve whitespace and line breaks */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cover Letter Generator</h1>
+        <div>
+            <input type="text" id="urlInput" placeholder="Enter URL" />
+            <button id="generateBtn">Generate</button>
+        </div>
+        <div class="content preserve-whitespace" id="content">
+            <!-- Generated content will be displayed here -->
+        </div>
+        <div class="spinner" id="spinner"></div>
+        <div class="chat-container preserve-whitespace" id="chatContainer">
+            <!-- Chat-like interface for feedback -->
+        </div>
+        <div class="feedback-section" id="feedbackSection">
+            <textarea id="feedbackInput" placeholder="Enter your feedback" rows="4" cols="50"></textarea>
+            <button id="tuneBtn">Tune it</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let threadId = '';
+
+            function showSpinner() {
+                $('#spinner').show();
+            }
+
+            function hideSpinner() {
+                $('#spinner').hide();
+            }
+
+            $('#generateBtn').click(function() {
+                const url = $('#urlInput').val();
+                showSpinner();
+                $.ajax({
+                    url: 'generate',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ url: url }),
+                    success: function(response) {
+                        hideSpinner();
+                        $('#content').html('<h2>URL Content</h2><p>' + response.content + '</p>');
+                        threadId = response.threadId;
+                        $('#chatContainer').append('<div class="message server-message">' + response.coverLetter + '</div>');
+                        $('#chatContainer').show();  // Show chat container after generating cover letter
+                        $('#feedbackSection').show();  // Show feedback section after generating cover letter
+                    },
+                    error: function() {
+                        hideSpinner();
+                        alert('Error generating content');
+                    }
+                });
+            });
+
+            $('#tuneBtn').click(function() {
+                const feedback = $('#feedbackInput').val();
+                if (threadId === '') {
+                    alert('No thread to tune');
+                    return;
+                }
+                showSpinner();
+                $.ajax({
+                    url: 'tune',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ threadId: threadId, feedback: feedback }),
+                    success: function(response) {
+                        hideSpinner();
+                        $('#chatContainer').append('<div class="message user-message">' + feedback + '</div>');
+                        $('#chatContainer').append('<div class="message server-message">' + response.coverLetter + '</div>');
+                        $('#feedbackInput').val('');  // Clear the feedback input
+                    },
+                    error: function() {
+                        hideSpinner();
+                        alert('Error tuning content');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
