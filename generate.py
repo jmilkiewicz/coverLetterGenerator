@@ -1,6 +1,7 @@
 import chevron
-from langchain_community.document_loaders import WebBaseLoader
 from assistant import run
+from bs4 import BeautifulSoup
+import json
 
 
 def genereateCoverLetterMessage(job_description):
@@ -22,10 +23,21 @@ def getCvMessage():
 
 
 def getJobDecription(jobDescriptionURL):
-    loader = WebBaseLoader(jobDescriptionURL)
-    loader.requests_kwargs = {'verify': False}
-    data = loader.load()
-    return data[0].page_content
+    import requests
+    r = requests.get(jobDescriptionURL)
+    try:
+        return parse(r.text)
+    except Exception as err:
+        error = f"Error {err=}, {type(err)=}"
+        return error
+
+def parse(content):
+    soup = BeautifulSoup(content, 'html.parser')
+    txt = soup.find("script", type='application/json').getText()
+    asJson = json.loads(txt)
+    description = asJson["props"]["pageProps"]["offer"]["body"]
+    element = BeautifulSoup(description, 'html.parser')
+    return element.getText()
 
 
 def generateCoverLetter(openApiClient, jobDescriptionURL):
