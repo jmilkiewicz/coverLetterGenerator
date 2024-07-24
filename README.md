@@ -1,6 +1,6 @@
 # Generate Cover Letter
-This package contains the infrastructure and the code to deploy and run a generate cover letter on AWS lambda. It used 
-OpenAPI Assistant API.
+This package contains the infrastructure and the code to deploy and run a `generate cover letter` on AWS lambda. It used 
+OpenAPI Assistant API and helps me to write cover letters for jobs published on https://justjoin.it/
 
 
 ## Code organization
