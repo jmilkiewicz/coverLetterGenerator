@@ -17,6 +17,4 @@ def run(openApiClient, threadId):
         }
         return result
     else:
-        print("!!!!!! error !!!!!!!")
-        print(run.status)
         raise Exception(f"!!!!!! error !!!!!!! {run.status}")
