@@ -1,0 +1,265 @@
+INTRODUCTION:
+Accomplished Software Engineer and Architect specializing in crafting high-quality applications for prominent
+businesses and institutions. Proven leader dedicated to fostering team growth and excellence through
+effective mentorship and training. Adept at enhancing business and application development processes
+with streamlined workflows and cutting-edge tools. Skilled in designing robust software architectures
+and excelling in hands-on development. Committed to continuous learning, with a current focus on
+expanding my expertise in Large Language Models (LLM) and other emerging technologies.
+
+++++++++++++++++++++++++++
+Software Development · Application Design · Project Implementation · Team Leadership
+Behavior Driven Development · Domain Driven Design · Test Driven Development ·
+· Employee Development · Process Improvements
+Agile Methodologies · Systems Architecture · Problem Solving · Coding Standards
+
+++++++++++++++++++++++++++
+PROFESSIONAL EXPERIENCE
+NextApps, Poznan· January 2024 -
+Software house.
+Lead Software engineer/hands-on architect
+Support and lead various activities in the Software Development Life Cycle (SDLC), including reviewing
+and designing system architecture, as well as system design/decomposition and implementation of core
+domain modules.
+Technologies
+Typescript, AWS, Kotlin, Java, Kubernetes, langChain/langGraph
+--------
+
+Cleyrop, Paris · August 2023 - December 2023
+European Data Hub.
+Freelance Software Engineer
+Redesigning Cleyrop's data pipeline, by introducing Apache Lighter alongside custom orchestration,
+departing from (too-slow) GitLab CI. This overhaul significantly enhanced performance and scalability,
+paving the way for more agile data handling.
+Technologies
+Spring Boot, Kotlin, Spark, Apache Lighter, Kafka, Kubernetes, PostgreSQL
+--------
+
+eBay Kleinanzeigen, Berlin · February 2022 - January 2023
+Local Classifieds in Germany
+Freelance Software Engineer
+Played a key role in software design and software development within a microservices-based
+environment, actively contributing to the creation of a pioneering product leveraging machine learning,
+particularly bandit algorithms, to maximize advertising revenue while preserving user vibrancy.
+Technologies
+Kotlin, Java, Typescript, Apache Beam, Spring Boot, Kubernetes, Gcp (DataFlow, PubSub, BigQuery
+ML), Terraform, DBT
+--------
+
+Lendico, Berlin · October 2020 - September 2021
+Peer-to-peer lending platform.
+Lead Software engineer/hands-on architect
+Led the design and development of a fully automated risk analysis process for loans, building
+integration of various services with financial institutions (Crefo/SCHUFA) and decision engines.
+Technologies
+Java, Spring Boot, CXF WebServices, Kubernetes, PostgreSQL
+--------
+
+Quandoo, Berlin · April 2020 - July 2020
+Online table reservations.
+Freelance Software Engineer
+Designed and developed a comprehensive ingestion data pipeline (Kappa Architecture) focused on
+onboarding new restaurants and enriching existing ones for the Quandoo platform.
+Technologies
+Kotlin, Spring for Apache Kafka, Apache Kafka, Kubernetes, Spock
+--------
+
+Circ, Berlin · September 2019 - January 2020
+Electric Scooter.
+Freelance Software Engineer
+Responsible for designing and developing new and existing backend services within the company's
+Microservices platform, catering to both consumer-facing applications and Circ public APIs.
+Technologies
+Java, Kotlin, Spring Boot, Docker, Kubernetes, AWS
+--------
+
+SAP Universal Id, Berlin · February 2019 - September 2019
+SAP-wide authentication.
+Freelance Software Engineer
+Design and development of Universal Id https://discover.sap.com/universalid/en-us/about.html to
+unify users and authentication for SAP partners.
+Technologies
+Java, Spring Boot, Docker
+--------
+
+WorkGenius· January 2019 - ongoing
+The global community of highly qualified tech freelancers.
+Technical assessment interviewer
+Technical assessments of candidates.
+--------
+
+SAP IoT Services, Dresden· October 2018 - January 2019
+SAP Cloud Platform Internet of Things.
+Freelance Devops Engineer
+Migration of existing SAP IoT Application Enablement stack to Kubernetes. Perform performance and
+scalability tests of migrated stack.
+Technologies
+Docker, Kubernetes, Helm
+--------
+
+NextApps, Poznan· June 2018 - September 2019
+Software house.
+Lead Software engineer/hands-on architect
+Support and lead of various activities of SDLC including system architecture review/design, introducing
+XP/Scrum practices, mentoring/coaching developers/product owner/scrum master, code reviews
+Technologies
+Agile development, Behavior Driven Development (BDD), Enterprise Architect (EA), Microsoft Azure,
+Node.js, Azure DevOps, MongoDB, Mongoose
+--------
+
+SAP Data Network, Berlin · April 2018 - September 2018
+Data-driven insight services from SAP.
+Freelance Software Engineer
+Design and development of tooling around data-driven insight services to benchmark, plan, predict and
+simulate business scenarios using client business data.
+Technologies
+Java, Dropwizard, Docker, Kubernetes, Python, Node.js, Vue.js
+--------
+
+BCG Digital Ventures, Berlin · January 2018 - April 2018
+Global corporate venture.
+Freelance Software Engineer
+Design and development of reactive architecture system for multimodality (combined transport) platform
+to support urban commuters with alternative means of transport (beside private car and public
+transport)
+Technologies
+Scala, Spring Boot, Spring Webflux, Kubernetes, AWS
+--------
+
+HERE Technologies, Berlin · November 2017 - January 2018
+Leading mobile location platform.
+Freelance Software Engineer
+Helping IoT department to build demo application for CES 2018 to show capabilities of a home-built
+Microservices-based architecture for a fully distributed navigation system for vehicles.
+Technologies
+Node.js, Docker, Postge SQL, gRPC
+--------
+
+nearForm, Berlin · September 2016 - June 2017
+Global software company.
+Freelance Software Engineer
+Supported an implementation of digital transformation for a major German insurance group. Designed
+and developed an adapter layer (REST, messaging) to allow integration with heterogeneous,
+proprietary client systems. Introduced and supported an implementation of clean code techniques,
+TDD, BDD, SOLID and XP practices to a client organisation. Built an automated CD/CI flow to allow fast
+and trackable deployment of Microservices based system.
+Technologies
+Node.js, Hapi, Lab, Docker, Kubernetes, PostgreSQL, MongoDB, AWS (Lambda, S3, EC2, RDS,
+DynamoDB), Redis, Circle CI
+--------
+
+Webtrekk GmbH, Berlin · February 2016 - September 2016
+Data Management Platform.
+Freelance Software Engineer
+Maintained and developed new modules of Webtrekk real-time bidding platform built with Lambda and
+Microservices architecture - DSP (demand-side platform) system to serve more than 2k bids per
+second. Collaborated with mathematicians to develop new and optimise existing bidding algorithms and
+strategies.
+Technologies
+Akka, Apache Spark, Scala, Java, Play, Docker, Ansible, CouchBase
+--------
+
+Fanmiles GmbH, Berlin · 2015 - February 2016
+An emotional customer loyalty program.
+Lead Software Engineer
+Designed and developed Fanmiles loyalty platform, defined a Microservices based architecture of the
+system. Evangelized an agile culture across the whole organization. Introduced and implemented
+extreme-programming practices to an engineering team.
+Closely cooperated with devops to align and build automated CI/CD pipeline and IAC (Infrastructure as
+code).
+Technologies
+Node.js, Restify, Express, Mocha, Chai, Java, Spring, Docker, MongoDB, AWS (Lambda, S3, EC2,
+Route53, Kinesis, SQS, S3, Route53, ELB, DynamoDB), Redis, ELK, Jenkins, Cucumber, Chef
+--------
+
+Ebay Inc, Berlin · 2013 - May 2015
+World wide e-commerce company.
+Agile Software Developer
+Member of ”European Product Development” supporting various European Business Units by
+providing full-featured software products in an Agile way. Worked closely with BU to build best of breed
+solutions which matter.
+Technologies
+Java/Java EE, Spring, Java RX, Node.js, Scala, OpenStack, Jetty, Tomcat, Cucumber, Jenkins, Chef
+--------
+
+Egnyte Inc, Poznan/Mountain View, CA · 2012 - April 2013
+File sharing solutions.
+Senior Java Developer
+Maintenance and evolution of Egnyte Cloud Server, including design and implementation of client
+facing REST API for mobile and web including two factor authentication.
+Technologies
+Java/Java EE, JAX-RS, Spring, Tomcat, Jenkins
+--------
+
+F.Hoffmann-La Roche Ltd, Poznan · 2010-2012
+World's leading pharmaceutical company.
+Senior Software Engineer
+Maintenance and evolution of internal CMS. Design and coordinate migration to new CMS platform (CQ
+5.3). Design and develop various affiliate integration systems.
+Technologies
+Java/Java EE, CQ 5.3, Bamboo, OSGI, Apache Felix
+--------
+
+INFOVIDE-MATRIX, Poznan · 2006-2010
+Top-ranking IT services and consulting company in Poland.
+Java / JEE Consultant
+Coordinated all aspects of Java / JEE development projects. Designed proof of concepts at project
+inception. Outlined systems architectures and provided recommendations on features of systems /
+environments, such as frameworks, tools, and coding standards. Managed design and programming of
+critical systems modules. Provided training to junior developers.
+Technologies
+Java/JavaEE, Spring, Spring Web-Services/Integration/DM/Batch, JAX-RS, TeamCity, Websphere 6.1,
+Glassfish, Tomcat, Websphere MQ, JMS, Hibernate, Oracle 10/11
+--------
+
+BANK ZACHODNI WBK / AIB GROUP, Poznan · 2005-2006
+Universal consumer and business bank with 512 outlets throughout Poland.
+Java / J2EE Developer
+Designed and developed new modules for the BZWB24 system. Handled redesign of existing modules
+to improve functionality and mitigate errors. Promoted to manage a new project as technical lead.
+Supervised the activities of a team of 3 contractors.
+Technologies
+Java/J2EE, Spring, Struts, Websphere 6.1, JMS, Hibernate, DB2
+--------
+
+MOBILEBOX, Poznan 2004-2005
+Developers of mobile phone hardware solutions and business software for hand-held devices, staffing
+approximately 25.
+Java / J2ME Developer
+Programmed client-side applications for customer IT solutions. Created, tested, and debugged J2ME
+applications. Progressed to take on full-scale projects, with authority over both client-side and server-
+side development.
+Technologies
+Java/J2EE, Spring, Apache Cocoon, JMS, Hibernate, MySql
+
+++++++++++++++++++++++++++
+FORMAL EDUCATION
+Master of Science, Computer Science
+Bachelor of Science, Computer Science
+University of Technology, Poznan, Poland
+
+++++++++++++++++++++++++++
+PROFESSIONAL DEVELOPMENT
+Sun Certified Programmer for Java 5.0 (SCJP)
+SpringSource Certified Spring Professional (grandfathered candidate)
+MongoDB for Java Developers Certification
+AWS Cloud Practitioner Certification
+various Coursera/LinkedIn course certificates
+Various courses on https://www.deeplearning.ai/
+
+++++++++++++++++++++++++++
+PROFESSIONAL MEMBERSHIPS
+Poznan Java User Group
+GeeCON Co-Organizer & Team Member
+Software Craftsmanship Berlin
+
+++++++++++++++++++++++++++
+TECHNICAL SKILLS
+Applications: Java, Kotlin, Kotlin coroutines, J2EE/JEE, JMS,Hibernate, Spring Framework,, Spring
+Web Services, Spring Integration, Spring Webflux, Spring Boot, Spring Batch, Spring DM, RxJava, XML
+Schema, JAXB 2,, Dropwizard, Maven, Junit, TeamCity, Hudson/Jenkins, Clover, Hamcrest, Mockito,
+Cucumber JVM, Jetty, Apache Tomcat, Websphere 6.1, Websphere MQ Series, Glassfish, OSGI,
+Apache Felix, Git, JDBC, SQL, Amazon Web Services (EC2, ECS, Kinesis, SQS, S3, Route53, ELB,
+DynamoDB, Lambda), GCP (PubSub, BigQuery, Dataflow), Cq 5.3/5.4, Dev/RUN@CloudBees, Heroku,
+Terracotta, Redis, MongoDB, Node.js, Mocha, Chai, Akka, Apache Spark, Docker, Kubernetes, gRPC,
+Helm, Apache Kafka, Chef, Terraform, Gen-AI, LLM Applications, langChain/langGraph, LlamaIndex
+Programming: Java, Kotlin, JavaScript, Typescript, Scala

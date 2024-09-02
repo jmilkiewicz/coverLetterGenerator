@@ -31,7 +31,7 @@ conda activate cover-letter-creator
 ```
 
 ### put your cv 
-create `cv.mustache` in templates folder where you put your CV in txt format.
+create `cv.mustache` in main folder where you put your CV in txt format.
 
 
 ### Create assistant 
