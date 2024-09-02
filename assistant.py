@@ -5,6 +5,13 @@ def run(openApiClient, threadId):
     run = openApiClient.beta.threads.runs.create_and_poll(
         thread_id=threadId,
         assistant_id=assistantId,
+        instructions="You are a helpful assistant who is helping to prepare personalised documents to apply for a new job or project. "
+                     "I am looking for a new project as a Senior Software Engineer, "
+                     "Engineering Team Lead, Software Architect, or similar roles. "
+                     "I need someone who can assist me in preparing my documents, such as CV, cover letter, "
+                     " individual introduction. "
+                     "Please respond in English."
+
     )
 
     if run.status == 'completed':
