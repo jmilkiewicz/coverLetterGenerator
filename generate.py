@@ -1,7 +1,9 @@
-import chevron
-from assistant import run
-from bs4 import BeautifulSoup
 import json
+
+import chevron
+from bs4 import BeautifulSoup
+
+from assistant import run
 
 
 def genereateCoverLetterMessage(job_description):
@@ -14,12 +16,13 @@ def genereateCoverLetterMessage(job_description):
 
 
 def getCvMessage():
-    with open('templates/cv.mustache', 'r') as f:
-        body = chevron.render(f, {})
-        return {
-            "role": "user",
-            "content": f"Poniżej znajduje się moje CV, jego poszczególne sekcje są odzielone za pomocą ++++++ oraz -----:```\n {body} \n```"
-        }
+    with open('templates/cv-prompt.mustache', 'r', encoding="utf-8") as f:
+        with open('cv.txt', 'r') as cv:
+            body = chevron.render(f, {"cv": cv.read()})
+            return {
+                "role": "user",
+                "content": body
+            }
 
 
 def getJobDecription(jobDescriptionURL):
@@ -30,6 +33,7 @@ def getJobDecription(jobDescriptionURL):
     except Exception as err:
         error = f"Error {err=}, {type(err)=}"
         return error
+
 
 def parse(content):
     soup = BeautifulSoup(content, 'html.parser')
