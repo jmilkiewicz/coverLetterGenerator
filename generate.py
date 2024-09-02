@@ -17,7 +17,7 @@ def genereateCoverLetterMessage(job_description):
 
 def getCvMessage():
     with open('templates/cv-prompt.mustache', 'r', encoding="utf-8") as f:
-        with open('cv.txt', 'r') as cv:
+        with open('./cv.txt', 'r') as cv:
             body = chevron.render(f, {"cv": cv.read()})
             return {
                 "role": "user",
